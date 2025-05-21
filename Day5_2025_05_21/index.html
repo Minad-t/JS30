@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>
+            Calculator
+        </title>
+        <link rel="stylesheet" href="./assets/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <form action="">
+                    <input type="text" name="display" id="display" class="display" />
+                    <div class="btn">
+                        <input class="sub-btn" type="button" value="1" onclick="display.value += '1'"/>
+                        <input class="sub-btn" type="button" value="2" onclick="display.value += '2'"/>
+                        <input class="sub-btn" type="button" value="3" onclick="display.value += '3'"/>
+                        <input class="sub-btn tinh" type="button" value="+" onclick="display.value += '+'"/>
+                    </div>
+                    <div class="btn">
+                        <input class="sub-btn" type="button" value="4" onclick="display.value += '4'"/>
+                        <input class="sub-btn" type="button" value="5" onclick="display.value += '5'"/>
+                        <input class="sub-btn" type="button" value="6" onclick="display.value += '6'"/>
+                        <input class="sub-btn tinh" type="button" value="-" onclick="display.value += '-'"/>
+                    </div>    
+                    <div class="btn">   
+                        <input class="sub-btn" type="button" value="7" onclick="display.value += '7'"/>
+                        <input class="sub-btn" type="button" value="8" onclick="display.value += '8'"/>
+                        <input class="sub-btn" type="button" value="9" onclick="display.value += '9'"/>
+                        <input class="sub-btn tinh" type="button" value="x" onclick="display.value += 'x'"/>
+                    </div> 
+                    <div class="btn">
+                        <input class="sub-btn tinh" type="button" value="C" onclick="display.value += ''"/>
+                        <input class="sub-btn tinh" type="button" value="0" onclick="display.value += '0'"/>
+                        <input class="sub-btn tinh" type="button" value="=" onclick="calculator()"/>
+                        <input class="sub-btn tinh" type="button" value="/" onclick="document.getElementById('display').value += '/'"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
