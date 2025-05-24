@@ -1,100 +1,297 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    font-size: 14px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 #main {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #header {
-    width: 100%;
-    height: 36px;
-    background: #da4639;
-    border-top: 3px solid #000;
-    padding: 0 200px;
+  width: 100%;
+  height: 36px;
+  background: #da4639;
+  border-top: 3px solid #000;
+  padding: 0 200px;
 }
 
 #nav {
-    width: 100%;
-    height: 100%;
-    display: flex;flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav .subnav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 #nav .subnav ul li a {
-    color: #fff;
+  color: #fff;
 }
 
 #nav .img-icon ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-#nav .img-icon {
-    width: 20px;
-    height: 20px;
+#nav .img-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 #slider {
-    width: 100%;
-    height: 150px;
-    padding: 0 200px ;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  padding: 0 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #slider .sub-slider {
-    width: 750px;
-    background: #f1f2f1;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: space-between;
+  width: 750px;
+  background: #f1f2f1;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
 }
 
-.sub-slider h1{
-    width: 50%;
-    font-size: 32px;
-    font-weight: normal;
+.sub-slider h1 {
+  width: 50%;
+  font-size: 32px;
+  font-weight: normal;
 }
 
 .sub-slider h1 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .sub-slider p {
-    width: 30%;
-    font-size: 14px;
+  width: 30%;
+  font-size: 14px;
 }
 
+.sub-slider button {
+  width: 30%;
+  height: 50%;
+  background: #da4639;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
+#menu {
+  width: 100%;
+  height: 36px;
+  background: #fbfcfb;
+  padding: 0 200px;
+  border: 2px solid #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#menu .menu-items {
+  width: 100%;
+  height: 100%;
+}
+
+#menu .menu-items ul li.first {
+  border-left: 2px solid #e4e4e4;
+}
+
+#menu .menu-items ul li.here {
+  height: 38px;
+  background: #fff;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+}
+
+#menu .menu-items ul li.here a {
+  color: #ff0000;
+}
+
+#menu .menu-items ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#menu .menu-items ul li {
+  border-right: 2px solid #e4e4e4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+#menu .menu-items ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#menu .search-btn {
+  height: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #e4e4e4;
+  border-right: 2px solid #e4e4e4;
+}
+
+#content {
+  width: 100%;
+  height: 450px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  gap: 1px;
+}
+
+#content .content-left {
+  width: 30%;
+  background-image: url(../images/technology.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content .content-left .make {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content .content-left .make > p {
+  border-radius: 8px;
+  width: 100px;
+  background: #7579ff;
+}
+
+#content .content-left p {
+  width: 80%;
+  margin: 5px 0;
+  text-align: center;
+}
+
+#content .content-left h1 {
+  text-align: center;
+  width: 90%;
+}
+
+#content .content-mid {
+  width: 40%;
+  background-image: url(../images/enviroment.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content .content-mid .make {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#content .content-mid .make > p {
+  border-radius: 8px;
+  width: 100px;
+  background: #ca86ca;
+}
+
+#content .content-mid p {
+  width: 80%;
+  margin: 5px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#content .content-mid h1 {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#content .content-right {
+  width: 30%;
+  background-image: url(../images/healthy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content .content-right .make {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+#content .content-right .make > p {
+  width: 60px;
+  border-radius: 8px;
+  background: #7579ff;
+}
+
+#content .content-right p {
+  width: 80%;
+  margin: 5px 0;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+
+#content .content-right h1 {
+  text-align: center;
+  width: 90%;
+  margin: 0 0 0 auto;
+}
