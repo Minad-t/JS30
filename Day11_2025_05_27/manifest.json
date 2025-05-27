@@ -1,0 +1,15 @@
+{
+    "name": "Dân trí",
+    "description": "Đổi tiêu đề",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "content_scripts": [
+    {
+      "js": ["/main.js"],
+      "matches": [
+        "https://dantri.com.vn/"
+      ]
+    }
+  ]
+}
