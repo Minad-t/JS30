@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 13</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Thêm danh sách sinh viên</h1>
+      <form action="">
+        <label for="">Mã Sinh Viên: </label>
+        <input id="msv" type="text" required />
+        <label for="">Họ tên: </label>
+        <input id="name" type="text" required />
+        <label for="">Email: </label>
+        <input id="email" type="email" required />
+        <label for="">Số điện thoại: </label>
+        <input id="sdt" type="number" />
+        <button onclick="themSinhVien(event)" type="submit">Thêm</button>
+      </form>
+    </div>
+
+    <table id="bang-sinhvien">
+      <thead>
+        <tr>
+          <th>Mã SV</th>
+          <th>Họ Tên</th>
+          <th>Email</th>
+          <th>SĐT</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
