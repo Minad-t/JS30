@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h2>Quản Lý Sản Phẩm</h2>
+        <form id="product-form">
+          <div class="input">
+            <input id="id" type="text" placeholder="ID" required />
+            <input id="name" type="text" placeholder="Tên" />
+            <input id="gia" type="number" placeholder="Giá" />
+            <input id="soluong" type="number" placeholder="Số lượng" />
+          </div>
+          <div class="btn">
+            <button type="submit">Thêm</button>
+          </div>
+        </form>
+      </div>
+      <table id="bang-sanpham">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng giá trị</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
