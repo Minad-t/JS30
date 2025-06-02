@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quản Lý Sản Phẩm</title>
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
@@ -13,15 +13,16 @@
         <form id="product-form">
           <div class="input">
             <input id="id" type="text" placeholder="ID" required />
-            <input id="name" type="text" placeholder="Tên" />
-            <input id="gia" type="number" placeholder="Giá" />
-            <input id="soluong" type="number" placeholder="Số lượng" />
+            <input id="name" type="text" placeholder="Tên" required />
+            <input id="gia" type="number" placeholder="Giá" required />
+            <input id="soluong" type="number" placeholder="Số lượng" required />
           </div>
           <div class="btn">
-            <button type="submit">Thêm</button>
+            <button onclick="themSanPham(event)" type="submit">Thêm</button>
           </div>
         </form>
       </div>
+
       <table id="bang-sanpham">
         <thead>
           <tr>
@@ -33,9 +34,16 @@
             <th>Hành động</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+        </tbody>
       </table>
+
+      <div class="thong-ke">
+        <p id="tongGiaTri">Tổng giá trị hàng tồn kho: 0 VNĐ</p>
+        <p id="sanPhamGiaCaoNhat">Sản phẩm có giá cao nhất: Chưa có</p>
+      </div>
     </div>
-    <script src="./assets/main.js"></script>
+
+    <script src= "./assets/main.js"></script>
   </body>
 </html>
