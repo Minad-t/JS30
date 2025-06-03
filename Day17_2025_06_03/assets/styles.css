@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-themsanpham {
+  margin: 50px 0;
+  width: 100%;
+  height: 400px;
+  padding: 50px 100px;
+}
+
+.form-themsanpham h1 {
+  font-size: 48px;
+  margin: 30px 0;
+}
+
+.form-themsanpham .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 300px;
+  height: 36px;
+  font-size: 14px;
+  margin: 20px 0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+button {
+  width: 100px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #efefee;
+  cursor: pointer;
+}
+
+.form-timkiemsanpham {
+  width: 100%;
+  height: 100px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 50px;
+}
+
+.form-timkiemsanpham form {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  border: 2px solid #ccc;
+  text-align: center;
+  padding: 5px 0;
+  background: #fff;
+}
+
+table thead > tr.first-row th {
+  background: #eff0ef;
+}

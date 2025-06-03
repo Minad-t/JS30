@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 18</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-themsanpham">
+        <h1>Quản lý Sản Phẩm</h1>
+        <form action="">
+          <div class="input">
+            <input id="id" type="text" required placeholder="ID Sản phẩm" />
+            <input id="name" type="text" required placeholder="Tên sản phẩm" />
+            <input id="gia" type="text" required placeholder="Giá" />
+            <input
+              id="soluong"
+              type="text"
+              required
+              placeholder="Số lượng Sản phẩm"
+            />
+          </div>
+          <div class="btn">
+            <button onclick="themSanPham(event)" type="submit">Thêm</button>
+          </div>
+        </form>
+      </div>
+      <div class="form-timkiemsanpham">
+        <h1>Tìm kiếm Sản phẩm:</h1>
+
+        <form action="">
+          <input
+            id="nut-timkiem"
+            type="text"
+            placeholder="Nhập id sản phẩm cần tìm kiếm"
+          />
+          <button onclick="timKiemSanPham(event)" type="submit">
+            Tìm kiếm
+          </button>
+          <button onclick="hienThiDanhSachSanPham()" type="button">
+            Danh Sách
+          </button>
+        </form>
+      </div>
+      <table id="bang-sanpham">
+        <thead>
+          <tr class="first-row">
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng giá trị</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="thong-ke">
+        <p id="tongGiaTri">Tổng giá trị hàng tồn kho: 0 VNĐ</p>
+        <p id="sanPhamGiaCaoNhat">Sản phẩm có giá cao nhất: Chưa có</p>
+      </div>
+    </div>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
